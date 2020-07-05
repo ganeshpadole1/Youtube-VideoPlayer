@@ -59,6 +59,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="gDa-zU-eo4"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="2Qv-Qx-GXX" id="pZx-rB-1by"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,11 +120,28 @@
                         <outlet property="emailTextField" destination="cuG-2f-sHG" id="UdI-B3-46Q"/>
                         <outlet property="passwordTextField" destination="MSz-94-EpP" id="XYJ-4q-OBm"/>
                         <outlet property="registerUserButton" destination="ipC-TS-rB4" id="jrh-C9-751"/>
+                        <segue destination="Ln3-mr-wWf" kind="show" identifier="RegisterToYoutube" id="e5u-rx-ZCD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWK-LV-UQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1808.6956521739132" y="-346.20535714285711"/>
+        </scene>
+        <!--Youtube Video View Controller-->
+        <scene sceneID="bRz-q3-hC1">
+            <objects>
+                <viewController id="Ln3-mr-wWf" customClass="YoutubeVideoViewController" customModule="Youtube_VideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qzx-Yh-MP1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0n2-p1-tY2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RIS-1j-ilj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0w-Jy-3Lf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="-297"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="vRF-4Y-QeE">
