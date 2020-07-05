@@ -64,21 +64,64 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Register User-->
         <scene sceneID="ejR-Rj-5Bh">
             <objects>
                 <viewController id="9RW-Sx-gXm" customClass="SignUpViewController" customModule="Youtube_VideoPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jHx-6E-1ib">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-6W-Cku">
+                                <rect key="frame" x="20" y="148" width="374" height="115"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-2f-sHG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="U39-gK-4oz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-94-EpP">
+                                        <rect key="frame" x="0.0" y="75" width="374" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-TS-rB4">
+                                <rect key="frame" x="167" y="288" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Cjq-63-Tg8"/>
+                                    <constraint firstAttribute="height" constant="40" id="M2f-Ru-ia0"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerUser:" destination="9RW-Sx-gXm" eventType="touchUpInside" id="ZNI-Qo-mL5"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jJS-6W-Cku" firstAttribute="top" secondItem="Ba8-Nh-ktm" secondAttribute="top" constant="60" id="Dul-5j-eSR"/>
+                            <constraint firstItem="jJS-6W-Cku" firstAttribute="leading" secondItem="Ba8-Nh-ktm" secondAttribute="leading" constant="20" id="OpV-aV-pFS"/>
+                            <constraint firstItem="ipC-TS-rB4" firstAttribute="centerX" secondItem="jHx-6E-1ib" secondAttribute="centerX" id="Vjw-bb-1KQ"/>
+                            <constraint firstItem="Ba8-Nh-ktm" firstAttribute="trailing" secondItem="jJS-6W-Cku" secondAttribute="trailing" constant="20" id="Wgt-sn-qkC"/>
+                            <constraint firstItem="ipC-TS-rB4" firstAttribute="top" secondItem="jJS-6W-Cku" secondAttribute="bottom" constant="25" id="ipw-Vd-fFz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ba8-Nh-ktm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="kbQ-tX-Rui"/>
+                    <navigationItem key="navigationItem" title="Register User" id="kbQ-tX-Rui"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="cuG-2f-sHG" id="UdI-B3-46Q"/>
+                        <outlet property="passwordTextField" destination="MSz-94-EpP" id="XYJ-4q-OBm"/>
+                        <outlet property="registerUserButton" destination="ipC-TS-rB4" id="jrh-C9-751"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWK-LV-UQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="-346"/>
+            <point key="canvasLocation" x="1808.6956521739132" y="-346.20535714285711"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="vRF-4Y-QeE">
