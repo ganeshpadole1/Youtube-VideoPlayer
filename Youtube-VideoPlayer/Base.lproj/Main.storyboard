@@ -75,11 +75,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-6W-Cku">
-                                <rect key="frame" x="20" y="148" width="374" height="115"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jJS-6W-Cku">
+                                <rect key="frame" x="40" y="148" width="334" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cuG-2f-sHG">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="U39-gK-4oz"/>
                                         </constraints>
@@ -87,14 +87,14 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSz-94-EpP">
-                                        <rect key="frame" x="0.0" y="75" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipC-TS-rB4">
-                                <rect key="frame" x="167" y="288" width="80" height="40"/>
+                                <rect key="frame" x="167" y="273" width="80" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Cjq-63-Tg8"/>
                                     <constraint firstAttribute="height" constant="40" id="M2f-Ru-ia0"/>
@@ -108,9 +108,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jJS-6W-Cku" firstAttribute="top" secondItem="Ba8-Nh-ktm" secondAttribute="top" constant="60" id="Dul-5j-eSR"/>
-                            <constraint firstItem="jJS-6W-Cku" firstAttribute="leading" secondItem="Ba8-Nh-ktm" secondAttribute="leading" constant="20" id="OpV-aV-pFS"/>
+                            <constraint firstItem="jJS-6W-Cku" firstAttribute="leading" secondItem="Ba8-Nh-ktm" secondAttribute="leading" constant="40" id="OpV-aV-pFS"/>
                             <constraint firstItem="ipC-TS-rB4" firstAttribute="centerX" secondItem="jHx-6E-1ib" secondAttribute="centerX" id="Vjw-bb-1KQ"/>
-                            <constraint firstItem="Ba8-Nh-ktm" firstAttribute="trailing" secondItem="jJS-6W-Cku" secondAttribute="trailing" constant="20" id="Wgt-sn-qkC"/>
+                            <constraint firstItem="Ba8-Nh-ktm" firstAttribute="trailing" secondItem="jJS-6W-Cku" secondAttribute="trailing" constant="40" id="Wgt-sn-qkC"/>
                             <constraint firstItem="ipC-TS-rB4" firstAttribute="top" secondItem="jJS-6W-Cku" secondAttribute="bottom" constant="25" id="ipw-Vd-fFz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ba8-Nh-ktm"/>
@@ -150,14 +150,58 @@
                     <view key="view" contentMode="scaleToFill" id="dvC-hD-1Qh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-Pe-XEc">
+                                <rect key="frame" x="40" y="148" width="334" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aWA-0e-OLR">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lyZ-dd-JUL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bzm-ho-9yp">
+                                        <rect key="frame" x="0.0" y="60" width="334" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08c-sT-fWB">
+                                <rect key="frame" x="167" y="268" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="q4x-U0-fWI"/>
+                                    <constraint firstAttribute="height" constant="40" id="yrU-Pz-1mn"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginAction:" destination="b2z-d9-1dd" eventType="touchUpInside" id="Pld-i2-qZ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zeb-xr-iBU" firstAttribute="trailing" secondItem="HTd-Pe-XEc" secondAttribute="trailing" constant="40" id="2VN-X6-8qF"/>
+                            <constraint firstItem="08c-sT-fWB" firstAttribute="top" secondItem="HTd-Pe-XEc" secondAttribute="bottom" constant="20" id="D5N-ev-Xrz"/>
+                            <constraint firstItem="HTd-Pe-XEc" firstAttribute="top" secondItem="Zeb-xr-iBU" secondAttribute="top" constant="60" id="PRE-U7-qa0"/>
+                            <constraint firstItem="HTd-Pe-XEc" firstAttribute="leading" secondItem="Zeb-xr-iBU" secondAttribute="leading" constant="40" id="Trv-hh-dfd"/>
+                            <constraint firstItem="08c-sT-fWB" firstAttribute="centerX" secondItem="dvC-hD-1Qh" secondAttribute="centerX" id="uvL-w3-4ns"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zeb-xr-iBU"/>
                     </view>
                     <navigationItem key="navigationItem" id="UDp-41-3eF"/>
+                    <connections>
+                        <outlet property="emailtextField" destination="aWA-0e-OLR" id="LUc-Lb-ERG"/>
+                        <outlet property="loginButton" destination="08c-sT-fWB" id="1Wf-uS-aPy"/>
+                        <outlet property="passwordTextField" destination="Bzm-ho-9yp" id="aU2-9o-vPw"/>
+                        <segue destination="Ln3-mr-wWf" kind="show" identifier="LoginToYoutubeVideo" id="eaO-GS-hsc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4c-gj-cQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032" y="387"/>
+            <point key="canvasLocation" x="2031.8840579710147" y="386.38392857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aNT-Lm-hDd">
@@ -178,4 +222,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eaO-GS-hsc"/>
+    </inferredMetricsTieBreakers>
 </document>
