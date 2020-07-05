@@ -2,5 +2,7 @@ platform :ios, '9.0'
 
 target 'Youtube-VideoPlayer' do
   use_frameworks!
-pod 'IQKeyboardManagerSwift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 end

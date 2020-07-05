@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>543571095650-6o4o78dgnjns22ti5t1ofj16d9v5jqpl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.543571095650-6o4o78dgnjns22ti5t1ofj16d9v5jqpl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBPPvMppvakRsxcrz2MZSUpcUeywbFVzVw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>543571095650</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>abhishek.com.Youtube-VideoPlayer</string>
+	<key>PROJECT_ID</key>
+	<string>videoplayer-1c3cc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>videoplayer-1c3cc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:543571095650:ios:d49d5af8effa450ab1e13b</string>
+	<key>DATABASE_URL</key>
+	<string>https://videoplayer-1c3cc.firebaseio.com</string>
+</dict>
+</plist>
